@@ -1,0 +1,18 @@
+//
+// Copyright (C) 2022 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libinit_pdx206",
+    recovery_available: true,
+    srcs: ["init_pdx206.cpp"],
+    include_dirs: [
+	"system/libbase/include",
+        "system/core/init"
+    ],
+    shared_libs: [
+        "libbase",
+    ]
+}
